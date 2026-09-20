@@ -1,0 +1,18 @@
+
+:root{--navy:#0F172A;--blue:#2563EB;--orange:#F97316;--bg:#F8FAFC;--text:#1E293B;--muted:#64748B}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:16px/1.6 Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
+header{position:sticky;top:0;background:#ffffffee;backdrop-filter:blur(8px);border-bottom:1px solid #e5e7eb;z-index:10}
+.wrap{max-width:1180px;margin:auto;padding:0 20px}nav{display:flex;justify-content:space-between;align-items:center;height:74px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:700}.logo svg{width:40px;height:40px}.menu{display:flex;gap:24px;flex-wrap:wrap}
+.menu a{text-decoration:none;color:var(--text)}.cta{background:var(--orange);color:#fff;padding:12px 18px;border-radius:12px;text-decoration:none}
+.hero{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;padding:80px 0}
+.hero h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.1}.hero p{max-width:700px;color:#dbeafe}
+section{padding:64px 0}.grid{display:grid;gap:24px}.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:#fff;border-radius:22px;padding:26px;box-shadow:0 10px 30px rgba(15,23,42,.08)}
+.icon{width:54px;height:54px;border-radius:14px;background:#eff6ff;display:grid;place-items:center;margin-bottom:12px}
+.heroimg,.img{width:100%;border-radius:22px;background:linear-gradient(135deg,#1e3a8a,#0ea5e9);aspect-ratio:5/4;display:grid;place-items:center;color:#fff;font-size:42px;font-weight:700}
+footer{background:var(--navy);color:#fff;padding:40px 0}.footergrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}.outline{border:2px solid #fff;color:#fff;padding:10px 16px;border-radius:12px;text-decoration:none}
+.badge{display:inline-block;background:#dbeafe;color:#1e40af;padding:6px 12px;border-radius:999px;margin-bottom:12px;font-size:.9rem}
+.floating{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 18px;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+@media(max-width:720px){.menu{display:none}nav{height:64px}}
